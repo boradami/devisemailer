@@ -119,14 +119,14 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "https://devise-mail.herokuapp.com" }
+  config.action_mailer.default_url_options = { host: "devise-mail.herokuapp.com" }
 
-  config.action_mailer.perform_deliveries = true
+  # config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     user_name:      'ami.logicalstreet@gmail.com',
     password:       'Ami@1111',
-    domain:         'MAIL_HOST',
+    domain:         'gmail.com',
     address:       'smtp.gmail.com',
     port:          '587',
     authentication: :plain,
